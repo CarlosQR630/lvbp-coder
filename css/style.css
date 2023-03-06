@@ -366,6 +366,24 @@ li.c{
     height: 100%;
 }
 
+/*MAIN CONTACTO*/
+
+.formulario{
+    background-color: rgb(38, 0, 255);
+    display: flex;
+    flex-direction: row;
+}
+
+.logoFormulario{
+    background-color: chartreuse;
+}
+
+.formContacto{
+    background-color: blueviolet;
+}
+
+
+
 
 
 
