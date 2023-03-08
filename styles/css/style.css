@@ -359,7 +359,7 @@ li.c {
 
 .cardEquipos .card {
   width: 30%;
-  height: fit-content;
+  height: auto;
   margin: 30px 0 20px 0;
   box-shadow: 0px 4px 13px 1px rgba(0, 0, 0, 0.92);
   -webkit-box-shadow: 0px 4px 13px 1px rgba(0, 0, 0, 0.92);
@@ -593,9 +593,8 @@ footer {
   }
   /*section main*/
   .gridEquipos {
-    height: 300vh;
     grid-template-columns: 10% 1fr 1fr 10%;
-    grid-template-rows: 18vh 8vh 0.25fr 0.8fr 0.1fr 25vh;
+    grid-template-rows: 18vh 8vh 1fr 25vh 25vh;
   }
   .equiposLiga1 {
     overflow: hidden;
@@ -645,6 +644,16 @@ footer {
     overflow: visible;
     padding-bottom: 0%;
   }
+  /*equipos*/
+  .gridEquipos {
+    display: grid;
+    grid-template-areas: ". header header ." "nav nav nav nav" ". section section ." ". banner banner ." "footer footer footer footer";
+    grid-template-columns: 10% 1fr 1fr 10%;
+    grid-template-rows: 18vh 8vh 0.5fr 25vh 25vh;
+  }
+  .cardEquipos .card {
+    width: 40%;
+  }
 }
 /*RESOLUCION DE 768PX*/
 @media screen and (max-width: 768px) {
@@ -659,6 +668,9 @@ footer {
   .main {
     height: fit-content;
     padding: 0 10% 0 10%;
+  }
+  .tituloPag {
+    font-size: large;
   }
   .main2 {
     height: 100%;
@@ -725,6 +737,19 @@ footer {
   .imagenFooter a img {
     width: 60%;
     margin-left: 50px;
+  }
+  /*equipos*/
+  .gridEquipos {
+    display: grid;
+    grid-template-areas: "header" "nav" "section" "banner" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 18vh 8vh 0.5fr 40vh 25vh;
+  }
+  .sectionEquipos {
+    padding: 0 20% 0 20%;
+  }
+  .cardEquipos .card {
+    width: 100%;
   }
 }
 
