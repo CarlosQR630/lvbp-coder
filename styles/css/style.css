@@ -97,6 +97,10 @@ nav {
   z-index: 2;
 }
 
+.container-fluid .navbar {
+  background-color: #00244f;
+}
+
 .listaNav {
   list-style-type: none;
   text-decoration: none;
@@ -133,7 +137,6 @@ nav li a i:hover {
 
 /*MAIN DEL INDEX*/
 main {
-  background-color: aqua;
   padding-top: 20px;
   grid-area: main;
   display: flex;
@@ -143,7 +146,6 @@ main {
 }
 
 .main1 {
-  background-color: blue;
   height: auto;
   text-align: center;
   color: #00244f;
@@ -151,7 +153,6 @@ main {
 }
 
 .main2 {
-  background-color: coral;
   height: auto;
   display: flex;
   flex-direction: row;
@@ -159,7 +160,6 @@ main {
 }
 
 .mainIzq {
-  background-color: chartreuse;
   padding-right: 2%;
   width: 60%;
   height: fit-content;
@@ -216,7 +216,6 @@ main {
   }
 }
 .mainDer {
-  background-color: crimson;
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -664,7 +663,7 @@ footer {
     flex-wrap: nowrap;
   }
   .multimedia {
-    height: 300px;
+    height: 230px;
   }
   .titulares {
     height: auto;
