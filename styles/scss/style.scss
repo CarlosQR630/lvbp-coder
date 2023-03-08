@@ -24,7 +24,7 @@ body {
     ". banner banner ."
     "footer footer footer footer";
     grid-template-columns: 10% 1fr 1fr 10%;
-    grid-template-rows: 18vh 8vh 1.5fr 1fr 0.10fr 0.3fr
+    grid-template-rows: 18vh 8vh 1fr 1fr 0.10fr 0.3fr
 }
 
 .gridEquipos{
@@ -106,9 +106,9 @@ header{
 
 .redesSociales{
     text-align: center;
-    height: 10%;
+    
     align-self: center;
-    width: 25%;
+    width: 35%;
     
 
 }
@@ -136,7 +136,7 @@ header{
 }
 
 .redesSociales a i:hover{
-    color: #003576;
+    color: rgb(51,122,183);
     font-size: 280%;
     transition: all 200ms ease;
 }
@@ -207,27 +207,27 @@ nav li a i:hover{
 /*MAIN DEL INDEX*/
 main{
 
-    background-color: aqua;
+    
     padding-top: 20px;
     grid-area: main;
     display: flex;
     flex-direction: column;
-    height: fit-content;
+    
     width: 100%;
     
     
 }
 
 .main1{
-    background-color: blue;
+    
     height: auto;
     text-align: center;
     color: #00244f;
     margin-bottom: 15px;
+    
 }
 
 .main2{
-    background-color: coral;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -236,20 +236,14 @@ main{
 }
 
 .mainIzq{
-    background-color: chartreuse;
     padding-right: 2%;
-    
-    width: 60%;
+     width: 60%;
     height: auto ;
     
 }
 
 /*carrusel de imagenes */
 .carrusel{
-    
-    
-    width: 100%;
-    height: 100%;
     overflow: hidden;  
     
 }
@@ -292,18 +286,17 @@ main{
 
 .mainDer{
     
-    background-color: crimson;
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    height: auto;
     
 }
 
 .multimedia{
     width: 100%;
-    height: 400px;
+    height: 45%;
 }
 
 .multimedia iframe{
@@ -314,6 +307,7 @@ main{
 
 .mainTitulares{
     overflow: hidden;
+    height: auto;
     
     
     
@@ -846,8 +840,20 @@ footer{
    
 
         grid-template-columns: 10% 1fr 1fr 10%;
-        grid-template-rows: 18vh 8vh 4fr 1fr 0.4fr 0.4fr
+        grid-template-rows: 12vh 8vh 4fr 1fr 0.4fr 0.4fr
     }  
+
+ 
+    .redesSociales a i{
+    
+        font-size: 180%;
+    }
+    
+    .redesSociales a i:hover{
+       
+        font-size: 230%;
+        
+    }
 
     .main{
         height: 100%;
@@ -912,7 +918,7 @@ footer{
         ". banner banner ."
         "footer footer footer footer";
         grid-template-columns: 10% 1fr 1fr 10%;
-        grid-template-rows: 18vh 8vh 0.5fr 25vh 25vh
+        grid-template-rows: 12vh 8vh 0.5fr 25vh 25vh
     }
 
    
@@ -942,13 +948,37 @@ footer{
         "footer"; 
 
         grid-template-columns:100%;
-        grid-template-rows: 18vh 10vh 0.75fr 1fr 40vh 15vh
+        grid-template-rows: 12vh 8vh 0.75fr 1fr 40vh 15vh
     }  
 
-    
+    .header{
+        padding: 0 10% 0 10%;
+    }
+    .redesSociales {
+       width: 55%;
+    }
 
-    .redesSociales{
-        display: none;
+    .redesSociales a i{
+    
+        font-size: 140%;
+    }
+    
+    .redesSociales a i:hover{
+       
+        font-size: 200%;
+        
+    }
+ 
+
+    nav li a{    
+        font-size: small;
+    
+    }
+
+    nav li a:hover{
+        
+        font-size: 80%;
+        
     }
 
     .main{
@@ -957,7 +987,7 @@ footer{
     }
 
     .tituloPag{
-        font-size: large;
+        font-size: medium;
     }
 
     .main2{

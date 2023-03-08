@@ -13,7 +13,7 @@ body {
   display: grid;
   grid-template-areas: ". header header ." "nav nav nav nav" ". main main ." ". section section ." ". banner banner ." "footer footer footer footer";
   grid-template-columns: 10% 1fr 1fr 10%;
-  grid-template-rows: 18vh 8vh 1.5fr 1fr 0.1fr 0.3fr;
+  grid-template-rows: 18vh 8vh 1fr 1fr 0.1fr 0.3fr;
 }
 
 .gridEquipos {
@@ -59,9 +59,8 @@ header {
 
 .redesSociales {
   text-align: center;
-  height: 10%;
   align-self: center;
-  width: 25%;
+  width: 35%;
 }
 
 .redesSociales ul {
@@ -80,7 +79,7 @@ header {
 }
 
 .redesSociales a i:hover {
-  color: #003576;
+  color: rgb(51, 122, 183);
   font-size: 280%;
   transition: all 200ms ease;
 }
@@ -133,17 +132,14 @@ nav li a i:hover {
 
 /*MAIN DEL INDEX*/
 main {
-  background-color: aqua;
   padding-top: 20px;
   grid-area: main;
   display: flex;
   flex-direction: column;
-  height: fit-content;
   width: 100%;
 }
 
 .main1 {
-  background-color: blue;
   height: auto;
   text-align: center;
   color: #00244f;
@@ -151,7 +147,6 @@ main {
 }
 
 .main2 {
-  background-color: coral;
   height: auto;
   display: flex;
   flex-direction: row;
@@ -159,7 +154,6 @@ main {
 }
 
 .mainIzq {
-  background-color: chartreuse;
   padding-right: 2%;
   width: 60%;
   height: auto;
@@ -167,8 +161,6 @@ main {
 
 /*carrusel de imagenes */
 .carrusel {
-  width: 100%;
-  height: 100%;
   overflow: hidden;
 }
 
@@ -218,17 +210,16 @@ main {
   }
 }
 .mainDer {
-  background-color: crimson;
   width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  height: auto;
 }
 
 .multimedia {
   width: 100%;
-  height: 400px;
+  height: 45%;
 }
 
 .multimedia iframe {
@@ -238,6 +229,7 @@ main {
 
 .mainTitulares {
   overflow: hidden;
+  height: auto;
 }
 
 .mainTitulares h2 {
@@ -613,7 +605,13 @@ footer {
 @media screen and (max-width: 1024px) {
   .bodyGrid {
     grid-template-columns: 10% 1fr 1fr 10%;
-    grid-template-rows: 18vh 8vh 4fr 1fr 0.4fr 0.4fr;
+    grid-template-rows: 12vh 8vh 4fr 1fr 0.4fr 0.4fr;
+  }
+  .redesSociales a i {
+    font-size: 180%;
+  }
+  .redesSociales a i:hover {
+    font-size: 230%;
   }
   .main {
     height: 100%;
@@ -649,7 +647,7 @@ footer {
     display: grid;
     grid-template-areas: ". header header ." "nav nav nav nav" ". section section ." ". banner banner ." "footer footer footer footer";
     grid-template-columns: 10% 1fr 1fr 10%;
-    grid-template-rows: 18vh 8vh 0.5fr 25vh 25vh;
+    grid-template-rows: 12vh 8vh 0.5fr 25vh 25vh;
   }
   .cardEquipos .card {
     width: 40%;
@@ -660,17 +658,32 @@ footer {
   .bodyGrid {
     grid-template-areas: "header" "nav" "main" "section" "banner" "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 18vh 10vh 0.75fr 1fr 40vh 15vh;
+    grid-template-rows: 12vh 8vh 0.75fr 1fr 40vh 15vh;
+  }
+  .header {
+    padding: 0 10% 0 10%;
   }
   .redesSociales {
-    display: none;
+    width: 55%;
+  }
+  .redesSociales a i {
+    font-size: 140%;
+  }
+  .redesSociales a i:hover {
+    font-size: 200%;
+  }
+  nav li a {
+    font-size: small;
+  }
+  nav li a:hover {
+    font-size: 80%;
   }
   .main {
     height: fit-content;
     padding: 0 10% 0 10%;
   }
   .tituloPag {
-    font-size: large;
+    font-size: medium;
   }
   .main2 {
     height: 100%;
