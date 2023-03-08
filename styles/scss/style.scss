@@ -408,6 +408,7 @@ li.c{
     flex-direction: row;
     height: 99%;
     width: 100%;
+    margin-bottom: 35px;
 }
 
 
@@ -727,7 +728,7 @@ footer{
     .bodyGrid{
         height: min-content;
         grid-template-columns: 10% 1fr 1fr 10%;
-        grid-template-rows: 18vh 8vh 3fr 1fr 0.5fr 0.5fr
+        grid-template-rows: 18vh 8vh 3fr 0.8fr 0.5fr 0.5fr
     }  
 
     .main2{        
@@ -790,10 +791,9 @@ footer{
                
     }
 
+    /*section main*/
 
-
-
-    
+   
     .gridEquipos{
         height: 300vh;
         grid-template-columns: 10% 1fr 1fr 10%;
@@ -906,7 +906,7 @@ footer{
         "footer"; 
 
         grid-template-columns:100%;
-        grid-template-rows: 18vh 10vh 1fr 2fr 30vh 15vh
+        grid-template-rows: 18vh 10vh 0.75fr 1fr 40vh 15vh
     }  
 
     
@@ -930,7 +930,8 @@ footer{
     }
 
     .multimedia{
-        height: 500px;
+        height: 300px;
+        
     }
 
     .titulares{
@@ -957,12 +958,19 @@ footer{
                
     }
 
+    /*section index*/
+
 
 
 
     .sectionSuperior{
         flex-direction: column;
+        padding: 0 10% 0 10%;
 
+    }
+
+    .sectionTabla {
+        margin-bottom: 60px;
     }
 
    #tablaPosicion{
@@ -1016,5 +1024,3 @@ footer{
     }
 
 }
-
-

@@ -1,0 +1,1035 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/*todos los body*/
+body {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  
+    
+
+}
+
+.bodyGrid{
+   
+    display: grid;
+    grid-template-areas: 
+    ". header header ."
+    "nav nav nav nav"
+    ". main main ."
+    ". section section ."
+    ". banner banner ."
+    "footer footer footer footer";
+    grid-template-columns: 10% 1fr 1fr 10%;
+    grid-template-rows: 18vh 8vh 1.5fr 1fr 0.10fr 0.3fr
+}
+
+.gridEquipos{
+   
+    display: grid;
+    grid-template-areas: 
+    ". header header ."
+    "nav nav nav nav"
+
+    ". section section ."
+    ". banner banner ."
+    "footer footer footer footer";
+    grid-template-columns: 10% 1fr 1fr 10%;
+    grid-template-rows: 18vh 8vh 0.5fr 40vh 25vh
+}
+
+.gridSedes{
+    display: grid;
+    grid-template-areas: 
+    ". header header ."
+    "nav nav nav nav"
+    ". section section ."
+    ". banner banner ."
+    "footer footer footer footer";
+    grid-template-columns: 10% 1fr 1fr 10%;
+    grid-template-rows: 18vh 8vh 320vh 25vh 25vh
+}
+
+.gridSerie{
+    display: grid;
+    grid-template-areas: 
+    ". header header ."
+    "nav nav nav nav"
+    ". main main ."
+    ". section section ."
+    ". banner banner ."
+    "footer footer footer footer";
+    grid-template-columns: 10% 1fr 1fr 10%;
+    grid-template-rows: 18vh 8vh 1fr 4fr 25vh 25vh
+
+}
+
+
+
+
+
+
+
+/*HEADER*/
+
+header{
+    
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+   
+    
+    
+}
+
+.logoHeader {
+       
+    padding-top: 1.15%;
+    padding-left: 1.15%;
+    height: 100%;
+    width: fit-content;
+    
+    
+    
+}
+
+.logoHeader img{
+    width: fit-content;
+    height: 80%;
+   
+}
+
+.redesSociales{
+    text-align: center;
+    height: 10%;
+    align-self: center;
+    width: 25%;
+    
+
+}
+
+.redesSociales ul{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+
+}
+
+.redesSociales li{
+    list-style-type: none;
+    
+}
+
+
+.redesSociales a i{
+    
+    color: #00244f;
+
+    font-size: 220%;
+}
+
+.redesSociales a i:hover{
+    color: #003576;
+    font-size: 280%;
+    transition: all 200ms ease;
+}
+
+
+
+
+/*NAVEGADOR*/
+nav{
+    background-color: #00244f;
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: 2;    
+    
+}
+
+
+.listaNav{
+
+   
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 120%;
+    width: 80%;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin-bottom: 0%;
+    
+      
+}
+
+nav li{
+    background-color: #00244f;    
+    list-style-type: none;
+    align-self: center;
+    justify-self: center;
+
+}
+
+nav li a{    
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+
+
+nav li a:hover{
+    color: rgb(51,122,183);
+    font-size: 120%;
+    transition: all 300ms ease;
+}
+
+nav li a i:hover{
+    font-size: 120%;
+}
+
+
+
+
+/*MAIN DEL INDEX*/
+main{
+
+    background-color: aqua;
+    padding-top: 20px;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+    
+}
+
+.main1{
+    background-color: blue;
+    height: auto;
+    text-align: center;
+    color: #00244f;
+    margin-bottom: 15px;
+}
+
+.main2{
+    background-color: coral;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+
+.mainIzq{
+    background-color: chartreuse;
+    padding-right: 2%;
+    
+    width: 60%;
+    height: fit-content;
+    
+}
+
+/*carrusel de imagenes */
+.carrusel{
+    
+    
+    width: 100%;
+    height: 100%;
+    overflow: hidden;  
+    
+}
+
+.carrusel ul{
+    display: flex;
+    animation: cambio 10s linear infinite   ;
+    width: 400%;
+    height: 100%;
+
+}
+
+.carrusel li{
+    width: 25%;
+    list-style: none;
+}
+
+.carrusel img{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: -0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+}
+
+
+.mainDer{
+    
+    background-color: crimson;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.multimedia{
+    width: 100%;
+    height: 50%;
+}
+
+.multimedia iframe{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.mainTitulares{
+    overflow: hidden;
+    
+    
+}
+
+.mainTitulares h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #00244f;
+    
+}
+
+.titulares{
+    
+    height: max-content;
+}
+
+.listaTitular{
+    
+   
+   height: fit-content
+
+}
+
+
+.listaTitular li{
+    width: auto;
+    height: auto;
+    white-space: nowrap;
+    list-style-position: inside;
+    list-style-type: disc;
+    overflow: hidden;
+    padding-bottom: 0%;   
+           
+}
+
+li.a{
+    color: #00244f;
+}
+
+li.b{
+    color: rgb(51,122,183);
+}
+
+li.c{
+    color: #c7c7c7;
+}
+
+/*MAIN SERIE DEL CARIBE*/
+
+.mainCaribe{
+    height: 100%;
+}
+
+/*MAIN CONTACTO*/
+
+.formulario{
+    background-color: rgb(38, 0, 255);
+    display: flex;
+    flex-direction: row;
+}
+
+.logoFormulario{
+    background-color: chartreuse;
+}
+
+.formContacto{
+    background-color: blueviolet;
+}
+
+
+
+
+
+
+
+/*SECTION*/
+.sectionIndex{
+   
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 20px;
+    height: auto;
+    
+    
+    
+}
+
+.sectionSuperior{
+    
+    display: flex;
+    flex-direction: row;
+    height: 99%;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+
+
+.sectionTabla{
+    
+    width: 100%;
+    height: 95%;
+}
+
+.posicion{
+    height: min-content;
+}
+
+.sectionTabla h2{
+    text-align: center;
+    color: #00244f;
+    margin-bottom: 10px;
+}
+
+.sectionTabla img{
+    width: 100%;
+    height: 99%;
+    
+}
+
+.hr img{
+    width: 100%;
+    height: 10%;
+    
+}
+
+/*SECCION EQUIPOS*/
+
+.sectionEquipos{
+   
+    grid-area: section;
+    margin-top: 60px;
+    
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.cardEquipos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cardEquipos .card{
+    width: 30%;
+    height: fit-content;
+    margin: 30px 0 20px 0 ;
+    box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
+    -webkit-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
+    -moz-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
+    
+}
+
+.sectionEquipos .novena img{
+
+    height: 50%;
+    
+
+}
+
+
+
+
+
+
+
+/*SECCION SEDES*/
+
+.sectionSedes{
+    
+    grid-area: section;
+    height: min-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
+    
+    
+    
+}
+
+.sectionSedes .card {
+    width: 30%;
+    margin: 30px 0 20px 0;
+    height: fit-content;
+    box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
+    -webkit-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
+    -moz-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
+    
+    
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.card-title a {
+    text-decoration: none;
+    font-size: medium;
+    color: #003576;
+}
+
+p{
+    font-size: small;
+}
+
+.cajaBotones{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+
+
+button a{
+    color: #003576;
+    text-decoration: none;
+    
+}
+
+
+
+/*SECCION SERIE DEL CARIBE*/
+
+.sectionSerie{
+    
+    grid-area: section;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.sectionSerieTitulo{
+   
+    text-align: center;
+    height: 5%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+
+    
+}
+
+.sectionRepresentantes{
+    
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.equipoPais{
+    
+    width: 40%;
+    margin-bottom: 80px;
+    height: 40vh;
+    box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
+    -webkit-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
+    -moz-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
+    border: 1px solid #cacaca;
+    border-radius: 0px 0px 7px 7px;
+    -webkit-border-radius: 0px 0px 7px 7px;
+    -moz-border-radius: 0px 0px 7px 7px;   
+    
+    
+}
+
+.equipoPais .card{
+    border-radius: 0px 0px 7px 7px;
+    -webkit-border-radius: 0px 0px 7px 7px;
+    -moz-border-radius: 0px 0px 7px 7px;
+    
+}
+
+
+.banderaPais{
+    background-color: #00357681;
+    height: 15%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0%;
+   
+
+    
+    
+      
+}
+
+.banderaPais a img{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+
+
+.col-md-4 img{
+    z-index: -2;
+}
+
+.img-fluid {
+    margin-top: 35px;
+}
+
+.card-body iframe{
+    width: 100%;
+}
+
+
+
+
+
+/*BANNER*/
+.banner {
+    
+    grid-area: banner;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.publicidad{
+    padding-top: 80px;
+    align-self: center;
+    width: 15%;
+    height: 100%;
+}
+.banner img {
+    align-self: center;
+    width: 100%;
+}
+
+.pub1{
+    height: 70%;
+    align-self: center;
+}
+
+
+/*FOOTER*/
+footer{
+    background-color: #00244f;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    
+    
+    
+}
+
+.logoLigaFooter{
+    
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-self: center;
+    height: 80%;
+
+}
+
+.imagenFooter{
+    
+    padding-top: 1%;
+    width: auto;
+    height: 100%;
+    
+
+}
+
+.imagenFooter a img{
+    
+    max-width: 100%;
+    max-height: 90%;
+    justify-content: center;
+    align-content: center; 
+    
+}
+
+
+
+.copyright{
+    
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    text-align: center;
+    padding-top: 0.7%;
+    height: 20%;
+    
+    
+}
+
+/*RESOLUCION 1440PX*/
+
+@media screen and (max-width: 1440px) {
+
+    .bodyGrid{
+        height: min-content;
+        grid-template-columns: 10% 1fr 1fr 10%;
+        grid-template-rows: 18vh 8vh 3fr 0.8fr 0.5fr 0.5fr
+    }  
+
+    .main2{        
+        
+        flex-wrap: wrap;    
+    }
+
+    .mainIzq{
+   
+        width: 100%;
+        padding-right: 0;
+        height: fit-content;
+        
+    }
+
+    .mainDer{   
+        
+        margin-top: 20px;
+    
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        
+        
+    }
+
+    .multimedia{
+        height: 100%;
+    }
+
+    .mainTitulares h2{
+        margin-left: 10%;
+        
+    }
+
+    .titulares{  
+         
+        padding-left: 10%;
+        overflow: hidden;
+    }
+    
+    .listaTitular{
+        
+       
+       height: 30%
+    
+    }
+    
+
+    .listaTitular li{
+        width: auto;
+        height: 100%;
+        
+        white-space: pre-wrap;
+        list-style-position: inside;
+        list-style-type: disc;
+        overflow: hidden;
+        padding-bottom: 1%;   
+               
+    }
+
+    /*section main*/
+
+    .sectionSuperior{
+        
+    }
+
+
+
+
+    
+    .gridEquipos{
+        height: 300vh;
+        grid-template-columns: 10% 1fr 1fr 10%;
+        grid-template-rows: 18vh 8vh 0.25fr 0.8fr 0.1fr 25vh
+        
+    }
+
+    .equiposLiga1{
+    
+        
+        overflow: hidden;
+        height: fit-content;
+    
+    
+    }
+
+
+
+    .novena{
+        width: 44%;
+        height: fit-content;
+        margin-bottom: 10%;
+    }
+
+    .multimedia{
+        width: 100%;
+        
+    }
+
+    
+
+
+}
+
+/*RESOLUCION DE 1024PX*/
+
+@media screen and (max-width: 1024px) {
+
+    .bodyGrid{
+   
+
+        grid-template-columns: 10% 1fr 1fr 10%;
+        grid-template-rows: 18vh 8vh 4fr 1fr 0.4fr 0.4fr
+    }  
+
+    .main{
+        height: 100%;
+    }
+
+    .main2{
+        height: 100%;
+    }
+
+    .mainDer{   
+        
+        flex-direction: column;
+        flex-wrap: no
+        wrap;
+        height: 50%;
+              
+        
+    }
+
+  
+
+    .multimedia{
+        height: 50%;
+    }
+
+
+    .mainTitulares h2{
+        margin-left: 0%;
+        
+    }
+
+    .titulares{  
+         
+        padding-left: 0%;
+        overflow: hidden;
+        
+        ;
+    }
+
+    .listaTitular li{
+        width: auto;
+        
+        
+        white-space: nowrap;
+        list-style-position: inside;
+        list-style-type: disc;
+        overflow: visible;
+        padding-bottom: 0%;   
+               
+    }
+
+    
+}
+
+/*RESOLUCION DE 768PX*/
+
+@media screen and (max-width: 768px) {
+    .bodyGrid{
+        
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "section"
+        "banner"
+        "footer"; 
+
+        grid-template-columns:100%;
+        grid-template-rows: 18vh 10vh 0.75fr 1fr 40vh 15vh
+    }  
+
+    
+
+    .redesSociales{
+        display: none;
+    }
+
+    .main{
+        height: fit-content;
+        padding: 0 10% 0 10%;
+    }
+
+    .main2{
+        
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    
+    }
+
+    .multimedia{
+        height: 300px;
+        
+    }
+
+    .titulares{
+    
+        height: auto;
+    }
+    
+    .listaTitular{
+        
+       
+       height: fit-content
+    
+    }
+    
+    
+    .listaTitular li{
+        width: auto;
+        height: auto;
+        white-space: nowrap;
+        list-style-position: inside;
+        list-style-type: disc;
+        overflow: visible;
+        padding: 0%;   
+               
+    }
+
+    /*section index*/
+
+
+
+
+    .sectionSuperior{
+        flex-direction: column;
+        padding: 0 10% 0 10%;
+
+    }
+
+    .sectionTabla {
+        margin-bottom: 60px;
+    }
+
+   #tablaPosicion{
+    width: 100%;
+   }
+
+    .novena{
+        width: 100%;
+        
+    }
+
+    .banner{
+        flex-direction: row;
+        flex-wrap: wrap;
+       
+    
+    }
+
+    .publicidad{
+        background-color: aqua;
+        width: 35%;
+        height: 30%;
+        padding-top: 0px;
+    }
+
+    .banner img{
+        height: 100%;
+    }
+    
+
+
+    .footer{
+        height: fit-content;
+    }
+
+    .logoLigaFooter{
+        margin-top: 0px;
+        flex-wrap: wrap;
+        align-self: center;
+        
+    }
+
+    .imagenFooter{
+        width: 40%;  
+        
+    }
+    
+    .imagenFooter a img{
+        width: 60%;
+        margin-left: 50px;
+    }
+
+}
+
+
