@@ -83,13 +83,12 @@ header{
     justify-content: space-between;
     
    
-   
     
     
 }
 
 .logoHeader {
-           
+       
     padding-top: 1.15%;
     padding-left: 1.15%;
     height: 100%;
@@ -146,7 +145,6 @@ header{
 
 
 /*NAVEGADOR*/
-
 nav{
     background-color: #00244f;
     grid-area: nav;
@@ -158,11 +156,6 @@ nav{
     z-index: 2;    
     
 }
-
-.container-fluid .navbar{
-    background-color: #00244f;
-}
-
 
 
 .listaNav{
@@ -211,12 +204,10 @@ nav li a i:hover{
 
 
 
-
-
 /*MAIN DEL INDEX*/
 main{
 
-    
+    background-color: aqua;
     padding-top: 20px;
     grid-area: main;
     display: flex;
@@ -224,10 +215,11 @@ main{
     height: fit-content;
     width: 100%;
     
+    
 }
 
 .main1{
-    
+    background-color: blue;
     height: auto;
     text-align: center;
     color: #00244f;
@@ -235,7 +227,7 @@ main{
 }
 
 .main2{
-    
+    background-color: coral;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -244,11 +236,11 @@ main{
 }
 
 .mainIzq{
-    
+    background-color: chartreuse;
     padding-right: 2%;
     
     width: 60%;
-    height: fit-content;
+    height: auto ;
     
 }
 
@@ -267,6 +259,8 @@ main{
     animation: cambio 10s linear infinite   ;
     width: 400%;
     height: 100%;
+    margin-bottom: 0;
+    padding-left: 0;
 
 }
 
@@ -298,17 +292,18 @@ main{
 
 .mainDer{
     
-   
+    background-color: crimson;
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100%;
     
 }
 
 .multimedia{
     width: 100%;
-    height: 50%;
+    height: 400px;
 }
 
 .multimedia iframe{
@@ -319,6 +314,7 @@ main{
 
 .mainTitulares{
     overflow: hidden;
+    
     
     
 }
@@ -387,7 +383,9 @@ li.c{
     background-color: chartreuse;
 }
 
-
+.formContacto{
+    background-color: blueviolet;
+}
 
 
 
@@ -800,7 +798,12 @@ footer{
 
     /*section main*/
 
-   
+
+
+
+
+
+    
     .gridEquipos{
         height: 300vh;
         grid-template-columns: 10% 1fr 1fr 10%;
@@ -937,7 +940,7 @@ footer{
     }
 
     .multimedia{
-        height: 230px;
+        height: 300px;
         
     }
 
