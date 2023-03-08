@@ -132,12 +132,12 @@ header{
     
     color: #00244f;
 
-    font-size: 220%;
+    font-size: 180%;
 }
 
 .redesSociales a i:hover{
     color: rgb(51,122,183);
-    font-size: 280%;
+    font-size: 240%;
     transition: all 200ms ease;
 }
 
@@ -724,11 +724,82 @@ footer{
 
 @media screen and (max-width: 1440px) {
 
-    .bodyGrid{
-        height: min-content;
+
+    /*section main*/
+
+
+
+
+
+
+    
+    .gridEquipos{
+        
         grid-template-columns: 10% 1fr 1fr 10%;
-        grid-template-rows: 18vh 8vh 3fr 0.8fr 0.5fr 0.5fr
+        grid-template-rows: 18vh 8vh 1fr 25vh 25vh
+        
+    }
+
+    .equiposLiga1{
+    
+        
+        overflow: hidden;
+        height: fit-content;
+    
+    
+    }
+
+
+
+    .novena{
+        width: 44%;
+        height: fit-content;
+        margin-bottom: 10%;
+    }
+
+    .multimedia{
+        width: 100%;
+        
+    }
+
+    
+
+
+}
+
+/*RESOLUCION DE 1024PX*/
+
+@media screen and (max-width: 1024px) {
+
+    .bodyGrid{
+   
+
+        grid-template-columns: 10% 1fr 1fr 10%;
+        grid-template-rows: 12vh 8vh 4fr 1fr 0.4fr 0.4fr
     }  
+
+    .redesSociales a i{
+    
+       
+    
+        font-size: 140%;
+    }
+    
+    .redesSociales a i:hover{
+        
+        font-size: 200%;
+        
+    }
+
+    .main {
+        margin-top: 15px;
+    }
+
+    .tituloPag{
+        font-size: x-large;
+    }
+
+
 
     .main2{        
         
@@ -790,71 +861,6 @@ footer{
                
     }
 
-    /*section main*/
-
-
-
-
-
-
-    
-    .gridEquipos{
-        
-        grid-template-columns: 10% 1fr 1fr 10%;
-        grid-template-rows: 18vh 8vh 1fr 25vh 25vh
-        
-    }
-
-    .equiposLiga1{
-    
-        
-        overflow: hidden;
-        height: fit-content;
-    
-    
-    }
-
-
-
-    .novena{
-        width: 44%;
-        height: fit-content;
-        margin-bottom: 10%;
-    }
-
-    .multimedia{
-        width: 100%;
-        
-    }
-
-    
-
-
-}
-
-/*RESOLUCION DE 1024PX*/
-
-@media screen and (max-width: 1024px) {
-
-    .bodyGrid{
-   
-
-        grid-template-columns: 10% 1fr 1fr 10%;
-        grid-template-rows: 12vh 8vh 4fr 1fr 0.4fr 0.4fr
-    }  
-
- 
-    .redesSociales a i{
-    
-        font-size: 180%;
-    }
-    
-    .redesSociales a i:hover{
-       
-        font-size: 230%;
-        
-    }
-
     .main{
         height: 100%;
     }
@@ -903,6 +909,15 @@ footer{
         overflow: visible;
         padding-bottom: 0%;   
                
+    }
+
+    nav li a{    
+        font-size: medium;
+    
+    }
+
+    h2{
+        font-size: small;
     }
 
     /*equipos*/
@@ -1105,7 +1120,7 @@ footer{
         "banner"
         "footer";
         grid-template-columns: 1fr ;
-        grid-template-rows: 18vh 8vh 0.5fr 40vh 25vh
+        grid-template-rows: 12vh 8vh 0.5fr 40vh 25vh
     }
 
     .sectionEquipos {
@@ -1116,6 +1131,18 @@ footer{
         width: 100%;
          
         
+    }
+
+    .card-title {
+        font-size: small;
+    }
+
+   .card-text {
+        font-size: x-small;
+    }
+
+    .list-group-item{
+        font-size: xx-small;
     }
 
 }
