@@ -5,6 +5,8 @@
     
 }
 
+
+
 /*todos los body*/
 body {
     font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
@@ -153,27 +155,24 @@ nav{
     align-content: center;
     position: sticky;
     top: 0px;
-    z-index: 2;    
+    z-index: 2; 
+    .listaNav{       
+        list-style-type: none;
+        text-decoration: none;
+        font-size: 120%;
+        width: 80%;    
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: space-around;
+        margin-bottom: 0%;   
+          
+    }   
     
 }
 
 
-.listaNav{
 
-   
-    list-style-type: none;
-    text-decoration: none;
-    font-size: 120%;
-    width: 80%;
-    
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    justify-content: space-around;
-    margin-bottom: 0%;
-    
-      
-}
 
 nav li{
     background-color: #00244f;    
@@ -224,6 +223,14 @@ main{
     text-align: center;
     color: #00244f;
     margin-bottom: 15px;
+    .tituloPag {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    .tituloIndex {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
     
 }
 
@@ -232,56 +239,52 @@ main{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    .mainIzq{
+        padding-right: 2%;
+         width: 60%;
+        height: auto ;
+
+        .carrusel{
+            overflow: hidden;
+            ul{
+                display: flex;
+                animation: cambio 10s linear infinite   ;
+                width: 400%;
+                height: 100%;
+                margin-bottom: 0;
+                padding-left: 0;
+                li{
+                    width: 25%;
+                    list-style: none;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            
+            } 
+            @keyframes cambio{
+                0%{margin-left: 0;}
+                20%{margin-left: -0;}
+            
+                25%{margin-left: -100%;}
+                45%{margin-left: -100%;}
+            
+                50%{margin-left: -200%;}
+                70%{margin-left: -200%;}
+            
+                75%{margin-left: -300%;}
+                100%{margin-left: -300%;}
+            
+            } 
+            
+        }
+
+        
+    }
 
 }
 
-.mainIzq{
-    padding-right: 2%;
-     width: 60%;
-    height: auto ;
-    
-}
-
-/*carrusel de imagenes */
-.carrusel{
-    overflow: hidden;  
-    
-}
-
-.carrusel ul{
-    display: flex;
-    animation: cambio 10s linear infinite   ;
-    width: 400%;
-    height: 100%;
-    margin-bottom: 0;
-    padding-left: 0;
-
-}
-
-.carrusel li{
-    width: 25%;
-    list-style: none;
-}
-
-.carrusel img{
-    width: 100%;
-    height: 100%;
-}
-
-@keyframes cambio{
-    0%{margin-left: 0;}
-    20%{margin-left: -0;}
-
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
-
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
-
-    75%{margin-left: -300%;}
-    100%{margin-left: -300%;}
-
-}
 
 
 .mainDer{
@@ -291,106 +294,107 @@ main{
     flex-direction: column;
     justify-content: space-between;
     height: auto;
+
+    .multimedia{
+        width: 100%;
+        height: 45%;
+
+        iframe{
+            width: 100%;
+            height: 100%;
+            
+        }
+    }
+
+    .mainTitulares{
+        overflow: hidden;
+        height: auto;
+
+        h2{
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            color: #00244f;
+            
+        }
+
+        .titulares{    
+            height: max-content;
+            .listaTitular{    
+                height: fit-content 
+                            
+            }
+
+            .listaTitular li{
+                width: auto;
+                height: auto;
+                white-space: nowrap;
+                list-style-position: inside;
+                list-style-type: disc;
+                overflow: hidden;
+                padding-bottom: 0%;         
+                       
+            }
+            
+            .a1{
+                color: #00244f;
+            }
+
+            .b1{
+                color: rgb(51,122,183);
+            }
+
+            .c1{
+                color: #c7c7c7;
+            }
+
+            li a{
+                color: black;
+                text-decoration: none;        
+                
+            }   
+        }       
+        
+    }
+
+
     
 }
 
-.multimedia{
-    width: 100%;
-    height: 45%;
-}
-
-.multimedia iframe{
-    width: 100%;
-    height: 100%;
-    
-}
-
-.mainTitulares{
-    overflow: hidden;
-    height: auto;
-    
-    
-    
-}
-
-.mainTitulares h2{
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    font-size: 20px;
-    color: #00244f;
-    
-}
-
-.titulares{
-    
-    height: max-content;
-}
-
-.listaTitular{
-    
-   
-   height: fit-content
-
-}
-
-
-.listaTitular li{
-    width: auto;
-    height: auto;
-    white-space: nowrap;
-    list-style-position: inside;
-    list-style-type: disc;
-    overflow: hidden;
-    padding-bottom: 0%;   
-           
-}
-
-li.a{
-    color: #00244f;
-}
-
-li.b{
-    color: rgb(51,122,183);
-}
-
-li.c{
-    color: #c7c7c7;
-}
-
-.listaTitular li a{
-    color: black;
-    text-decoration: none;
-}
 
 /*MAIN SERIE DEL CARIBE*/
 
 .mainCaribe{
     display: flex;
     flex-direction: column;
-}
-
-.tituloPagina {
-    text-align: center;
-}
-
-.mainCaribe .multimedia{
-    height: 600px;
-    margin-bottom: 35px;
-
-}
-
-.historiaSdc p{
-    font-size: larger;
+    .tituloPagina {
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        
+    }
+    #videoMain2{
+        height: 600px;
+        width: 100%;
+        margin-bottom: 35px;
+    
+    }
+    .texto p{
+        font-size: x-large;
+        margin-bottom: 80px;
+    }
 }
 
 /*MAIN CONTACTO*/
 
 .formulario{
     background-color: rgb(38, 0, 255);
+    margin-top: 80px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .logoFormulario{
@@ -399,13 +403,9 @@ li.c{
 
 .formContacto{
     background-color: blueviolet;
+    width: 35%;
+    
 }
-
-
-
-
-
-
 
 /*SECTION*/
 .sectionIndex{
@@ -414,11 +414,12 @@ li.c{
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    margin-top: 20px;
+    margin-top: 80px;
     height: auto;
-    
-    
-    
+    .hr img{
+        width: 100%;
+        height: 10%;        
+    }    
 }
 
 .sectionSuperior{
@@ -428,48 +429,29 @@ li.c{
     height: 99%;
     width: 100%;
     margin-bottom: 35px;
+    .sectionTabla{    
+        width: 100%;
+        height: 85%;
+    }
+    .sectionTabla h2{
+        text-align: center;
+        color: #00244f;
+        margin-bottom: 10px;
+    }
+    .sectionTabla img{
+        width: 100%;
+        height: 90%;
+        
+    }
 }
-
-
-
-.sectionTabla{
-    
-    width: 100%;
-    height: 95%;
-}
-
-.posicion{
-    height: min-content;
-}
-
-.sectionTabla h2{
-    text-align: center;
-    color: #00244f;
-    margin-bottom: 10px;
-}
-
-.sectionTabla img{
-    width: 100%;
-    height: 99%;
-    
-}
-
-.hr img{
-    width: 100%;
-    height: 10%;
-    
-}
-
 /*SECCION EQUIPOS*/
 
 .sectionEquipos{
    
     grid-area: section;
-    margin-top: 60px;
-    
+    margin-top: 60px;    
     display: flex;
-    flex-direction: column;
-   
+    flex-direction: column;   
 }
 
 .cardEquipos{
@@ -477,25 +459,17 @@ li.c{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+
+    .card{
+        width: 30%;
+        height: auto;
+        margin: 30px 0 20px 0 ;
+        box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
+        -webkit-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
+        -moz-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
+        
+    }
 }
-.cardEquipos .card{
-    width: 30%;
-    height: auto;
-    margin: 30px 0 20px 0 ;
-    box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
-    -webkit-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
-    -moz-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
-    
-}
-
-.sectionEquipos .novena img{
-
-    height: 50%;
-    
-
-}
-
-
 /*SECCION SEDES*/
 
 .sectionSedes{
@@ -506,55 +480,57 @@ li.c{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    .tituloPagina {
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        
+    }
+    .texto p{
+        font-size: x-large;
+        margin-bottom: 80px;
+    }
+    .card {
+        width: 40%;
+        height: 30%;
+        margin: 80px 0 120px 0;
+        height: fit-content;
+        box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
+        -webkit-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
+        -moz-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
+
+        img{
+            width: 100%;
+            height: auto;            
+        }
+
+        .card-title a {
+            text-decoration: none;
+            font-size: medium;
+            color: #003576;
+        }
+        
+        p{
+            font-size: small;
+        }
+        
+        .cajaBotones{            
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+        }        
+        
+        button a{
+            color: #003576;
+            text-decoration: none;
+            
+        }
+        
+        
+    }
     
 }
-
-.sectionSedes .card {
-    width: 30%;
-    height: 30%;
-    margin: 30px 0 20px 0;
-    height: fit-content;
-    box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
-    -webkit-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
-    -moz-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
-    
-    
-}
-
-.card img{
-    width: 100%;
-    height: auto;
-    
-}
-
-.card-title a {
-    text-decoration: none;
-    font-size: medium;
-    color: #003576;
-}
-
-p{
-    font-size: small;
-}
-
-.cajaBotones{
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-}
-
-
-
-button a{
-    color: #003576;
-    text-decoration: none;
-    
-}
-
-
-
 /*SECCION SERIE DEL CARIBE*/
 
 .sectionSerie{
@@ -563,94 +539,74 @@ button a{
     height: fit-content;
     display: flex;
     flex-direction: column;
-
-
-}
-
-.sectionSerieTitulo{
-   
-    text-align: center;
-    height: 5%;
-    margin-bottom: 80px;
-    margin-top: 50px;
-    h2{
-        color: #00244f;
+    .sectionSerieTitulo{   
+        text-align: center;
+        height: 5%;
+        margin-bottom: 80px;
+        margin-top: 50px;
+        h2{
+            color: #00244f;
+        }    
     }
 
+    .sectionRepresentantes{    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
 
+        .equipoPais{
     
+            width: 40%;
+            margin-bottom: 120px;
+            height: 40vh;
+            box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
+            -webkit-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
+            -moz-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
+            border: 1px solid #cacaca;
+            border-radius: 0px 0px 7px 7px;
+            -webkit-border-radius: 0px 0px 7px 7px;
+            -moz-border-radius: 0px 0px 7px 7px;
+
+            .banderaPais{
+                background-color: #00357681;
+                height: 15%;
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 0%;
+                    
+            }
+
+            .banderaPais a img{
+                width: 100%;
+                height: 100%;
+                
+                
+            }
+            
+            .card{
+                border-radius: 0px 0px 7px 7px;
+                -webkit-border-radius: 0px 0px 7px 7px;
+                -moz-border-radius: 0px 0px 7px 7px;
+
+                .col-md-4 img{
+                    z-index: -2;
+                }
+
+                .img-fluid {
+                    margin-top: 35px;
+                }
+
+                .card-body iframe{
+                    width: 100%;
+                }
+                
+            }
+
+        }
+    }
+
 }
-
-.sectionRepresentantes{
-    
-    
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.equipoPais{
-    
-    width: 40%;
-    margin-bottom: 120px;
-    height: 40vh;
-    box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
-    -webkit-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
-    -moz-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
-    border: 1px solid #cacaca;
-    border-radius: 0px 0px 7px 7px;
-    -webkit-border-radius: 0px 0px 7px 7px;
-    -moz-border-radius: 0px 0px 7px 7px;   
-    
-    
-}
-
-.equipoPais .card{
-    border-radius: 0px 0px 7px 7px;
-    -webkit-border-radius: 0px 0px 7px 7px;
-    -moz-border-radius: 0px 0px 7px 7px;
-    
-}
-
-
-.banderaPais{
-    background-color: #00357681;
-    height: 15%;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 0%;
-   
-
-    
-    
-      
-}
-
-.banderaPais a img{
-    width: 100%;
-    height: 100%;
-    
-    
-}
-
-
-
-.col-md-4 img{
-    z-index: -2;
-}
-
-.img-fluid {
-    margin-top: 35px;
-}
-
-.card-body iframe{
-    width: 100%;
-}
-
-
-
-
 
 /*BANNER*/
 .banner {
@@ -659,26 +615,25 @@ button a{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
+    .publicidad{
+        padding-top: 30px;
+        align-self: center;
+        width: 15%;
+        height: 100%;
+
+        .pub1{
+            height: 70%;
+            align-self: center;
+        }
+    }
+
+    img {
+        align-self: center;
+        width: 100%;
+    }
     
 }
-
-.publicidad{
-    padding-top: 30px;
-    align-self: center;
-    width: 15%;
-    height: 100%;
-}
-.banner img {
-    align-self: center;
-    width: 100%;
-}
-
-.pub1{
-    height: 70%;
-    align-self: center;
-}
-
-
 /*FOOTER*/
 footer{
     background-color: #00244f;
@@ -687,51 +642,42 @@ footer{
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    
-    
-    
-}
 
-.logoLigaFooter{
+    .logoLigaFooter{
     
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    justify-self: center;
-    height: 80%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-self: center;
+        height: 80%;
 
-}
+        .imagenFooter{    
+            padding-top: 1%;
+            width: auto;
+            height: 100%;           
+        
+        }
 
-.imagenFooter{
+        .imagenFooter a img{    
+            max-width: 100%;
+            max-height: 90%;
+            justify-content: center;
+            align-content: center;             
+        }
     
-    padding-top: 1%;
-    width: auto;
-    height: 100%;
-    
+    } 
 
-}
-
-.imagenFooter a img{
+    .copyright{
     
-    max-width: 100%;
-    max-height: 90%;
-    justify-content: center;
-    align-content: center; 
-    
-}
-
-
-
-.copyright{
-    
-    color: rgb(255, 255, 255);
-    font-size: 10px;
-    text-align: center;
-    padding-top: 0.7%;
-    height: 20%;
-    
+        color: rgb(255, 255, 255);
+        font-size: 10px;
+        text-align: center;
+        padding-top: 0.7%;
+        height: 20%;       
+        
+    }  
     
 }
 

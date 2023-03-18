@@ -95,8 +95,7 @@ nav {
   top: 0px;
   z-index: 2;
 }
-
-.listaNav {
+nav .listaNav {
   list-style-type: none;
   text-decoration: none;
   font-size: 120%;
@@ -145,6 +144,14 @@ main {
   color: #00244f;
   margin-bottom: 15px;
 }
+.main1 .tituloPag {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.main1 .tituloIndex {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 
 .main2 {
   height: auto;
@@ -152,19 +159,15 @@ main {
   flex-direction: row;
   flex-wrap: nowrap;
 }
-
-.mainIzq {
+.main2 .mainIzq {
   padding-right: 2%;
   width: 60%;
   height: auto;
 }
-
-/*carrusel de imagenes */
-.carrusel {
+.main2 .mainIzq .carrusel {
   overflow: hidden;
 }
-
-.carrusel ul {
+.main2 .mainIzq .carrusel ul {
   display: flex;
   animation: cambio 10s linear infinite;
   width: 400%;
@@ -172,17 +175,14 @@ main {
   margin-bottom: 0;
   padding-left: 0;
 }
-
-.carrusel li {
+.main2 .mainIzq .carrusel ul li {
   width: 25%;
   list-style: none;
 }
-
-.carrusel img {
+.main2 .mainIzq .carrusel ul li img {
   width: 100%;
   height: 100%;
 }
-
 @keyframes cambio {
   0% {
     margin-left: 0;
@@ -209,6 +209,7 @@ main {
     margin-left: -300%;
   }
 }
+
 .mainDer {
   width: 40%;
   display: flex;
@@ -216,40 +217,33 @@ main {
   justify-content: space-between;
   height: auto;
 }
-
-.multimedia {
+.mainDer .multimedia {
   width: 100%;
   height: 45%;
 }
-
-.multimedia iframe {
+.mainDer .multimedia iframe {
   width: 100%;
   height: 100%;
 }
-
-.mainTitulares {
+.mainDer .mainTitulares {
   overflow: hidden;
   height: auto;
 }
-
-.mainTitulares h2 {
+.mainDer .mainTitulares h2 {
   text-transform: uppercase;
   font-weight: bold;
-  margin-top: 0px;
+  margin-top: 10px;
   margin-bottom: 20px;
   font-size: 20px;
   color: #00244f;
 }
-
-.titulares {
+.mainDer .mainTitulares .titulares {
   height: max-content;
 }
-
-.listaTitular {
+.mainDer .mainTitulares .titulares .listaTitular {
   height: fit-content;
 }
-
-.listaTitular li {
+.mainDer .mainTitulares .titulares .listaTitular li {
   width: auto;
   height: auto;
   white-space: nowrap;
@@ -258,20 +252,16 @@ main {
   overflow: hidden;
   padding-bottom: 0%;
 }
-
-li.a {
+.mainDer .mainTitulares .titulares .a1 {
   color: #00244f;
 }
-
-li.b {
+.mainDer .mainTitulares .titulares .b1 {
   color: rgb(51, 122, 183);
 }
-
-li.c {
+.mainDer .mainTitulares .titulares .c1 {
   color: #c7c7c7;
 }
-
-.listaTitular li a {
+.mainDer .mainTitulares .titulares li a {
   color: black;
   text-decoration: none;
 }
@@ -281,25 +271,28 @@ li.c {
   display: flex;
   flex-direction: column;
 }
-
-.tituloPagina {
+.mainCaribe .tituloPagina {
   text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
-
-.mainCaribe .multimedia {
+.mainCaribe #videoMain2 {
   height: 600px;
+  width: 100%;
   margin-bottom: 35px;
 }
-
-.historiaSdc p {
-  font-size: larger;
+.mainCaribe .texto p {
+  font-size: x-large;
+  margin-bottom: 80px;
 }
 
 /*MAIN CONTACTO*/
 .formulario {
   background-color: rgb(38, 0, 255);
+  margin-top: 80px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .logoFormulario {
@@ -308,6 +301,7 @@ li.c {
 
 .formContacto {
   background-color: blueviolet;
+  width: 35%;
 }
 
 /*SECTION*/
@@ -316,8 +310,12 @@ li.c {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  margin-top: 20px;
+  margin-top: 80px;
   height: auto;
+}
+.sectionIndex .hr img {
+  width: 100%;
+  height: 10%;
 }
 
 .sectionSuperior {
@@ -327,30 +325,18 @@ li.c {
   width: 100%;
   margin-bottom: 35px;
 }
-
-.sectionTabla {
+.sectionSuperior .sectionTabla {
   width: 100%;
-  height: 95%;
+  height: 85%;
 }
-
-.posicion {
-  height: min-content;
-}
-
-.sectionTabla h2 {
+.sectionSuperior .sectionTabla h2 {
   text-align: center;
   color: #00244f;
   margin-bottom: 10px;
 }
-
-.sectionTabla img {
+.sectionSuperior .sectionTabla img {
   width: 100%;
-  height: 99%;
-}
-
-.hr img {
-  width: 100%;
-  height: 10%;
+  height: 90%;
 }
 
 /*SECCION EQUIPOS*/
@@ -367,7 +353,6 @@ li.c {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
 .cardEquipos .card {
   width: 30%;
   height: auto;
@@ -375,10 +360,6 @@ li.c {
   box-shadow: 0px 4px 13px 1px rgba(0, 0, 0, 0.92);
   -webkit-box-shadow: 0px 4px 13px 1px rgba(0, 0, 0, 0.92);
   -moz-box-shadow: 0px 4px 13px 1px rgba(0, 0, 0, 0.92);
-}
-
-.sectionEquipos .novena img {
-  height: 50%;
 }
 
 /*SECCION SEDES*/
@@ -390,39 +371,42 @@ li.c {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
+.sectionSedes .tituloPagina {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.sectionSedes .texto p {
+  font-size: x-large;
+  margin-bottom: 80px;
+}
 .sectionSedes .card {
-  width: 30%;
+  width: 40%;
   height: 30%;
-  margin: 30px 0 20px 0;
+  margin: 80px 0 120px 0;
   height: fit-content;
   box-shadow: 0px 4px 13px 1px rgba(0, 0, 0, 0.92);
   -webkit-box-shadow: 0px 4px 13px 1px rgba(0, 0, 0, 0.92);
   -moz-box-shadow: 0px 4px 13px 1px rgba(0, 0, 0, 0.92);
 }
-
-.card img {
+.sectionSedes .card img {
   width: 100%;
   height: auto;
 }
-
-.card-title a {
+.sectionSedes .card .card-title a {
   text-decoration: none;
   font-size: medium;
   color: #003576;
 }
-
-p {
+.sectionSedes .card p {
   font-size: small;
 }
-
-.cajaBotones {
+.sectionSedes .card .cajaBotones {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-
-button a {
+.sectionSedes .card button a {
   color: #003576;
   text-decoration: none;
 }
@@ -434,25 +418,22 @@ button a {
   display: flex;
   flex-direction: column;
 }
-
-.sectionSerieTitulo {
+.sectionSerie .sectionSerieTitulo {
   text-align: center;
   height: 5%;
   margin-bottom: 80px;
   margin-top: 50px;
 }
-.sectionSerieTitulo h2 {
+.sectionSerie .sectionSerieTitulo h2 {
   color: #00244f;
 }
-
-.sectionRepresentantes {
+.sectionSerie .sectionRepresentantes {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
-.equipoPais {
+.sectionSerie .sectionRepresentantes .equipoPais {
   width: 40%;
   margin-bottom: 120px;
   height: 40vh;
@@ -464,35 +445,29 @@ button a {
   -webkit-border-radius: 0px 0px 7px 7px;
   -moz-border-radius: 0px 0px 7px 7px;
 }
-
-.equipoPais .card {
-  border-radius: 0px 0px 7px 7px;
-  -webkit-border-radius: 0px 0px 7px 7px;
-  -moz-border-radius: 0px 0px 7px 7px;
-}
-
-.banderaPais {
+.sectionSerie .sectionRepresentantes .equipoPais .banderaPais {
   background-color: rgba(0, 53, 118, 0.5058823529);
   height: 15%;
   display: flex;
   justify-content: space-around;
   margin-bottom: 0%;
 }
-
-.banderaPais a img {
+.sectionSerie .sectionRepresentantes .equipoPais .banderaPais a img {
   width: 100%;
   height: 100%;
 }
-
-.col-md-4 img {
+.sectionSerie .sectionRepresentantes .equipoPais .card {
+  border-radius: 0px 0px 7px 7px;
+  -webkit-border-radius: 0px 0px 7px 7px;
+  -moz-border-radius: 0px 0px 7px 7px;
+}
+.sectionSerie .sectionRepresentantes .equipoPais .card .col-md-4 img {
   z-index: -2;
 }
-
-.img-fluid {
+.sectionSerie .sectionRepresentantes .equipoPais .card .img-fluid {
   margin-top: 35px;
 }
-
-.card-body iframe {
+.sectionSerie .sectionRepresentantes .equipoPais .card .card-body iframe {
   width: 100%;
 }
 
@@ -503,22 +478,19 @@ button a {
   flex-direction: row;
   justify-content: space-around;
 }
-
-.publicidad {
+.banner .publicidad {
   padding-top: 30px;
   align-self: center;
   width: 15%;
   height: 100%;
 }
-
+.banner .publicidad .pub1 {
+  height: 70%;
+  align-self: center;
+}
 .banner img {
   align-self: center;
   width: 100%;
-}
-
-.pub1 {
-  height: 70%;
-  align-self: center;
 }
 
 /*FOOTER*/
@@ -530,8 +502,7 @@ footer {
   justify-content: space-between;
   height: 100%;
 }
-
-.logoLigaFooter {
+footer .logoLigaFooter {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
@@ -540,21 +511,18 @@ footer {
   justify-self: center;
   height: 80%;
 }
-
-.imagenFooter {
+footer .logoLigaFooter .imagenFooter {
   padding-top: 1%;
   width: auto;
   height: 100%;
 }
-
-.imagenFooter a img {
+footer .logoLigaFooter .imagenFooter a img {
   max-width: 100%;
   max-height: 90%;
   justify-content: center;
   align-content: center;
 }
-
-.copyright {
+footer .copyright {
   color: rgb(255, 255, 255);
   font-size: 10px;
   text-align: center;

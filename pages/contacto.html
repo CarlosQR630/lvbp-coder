@@ -80,6 +80,8 @@
     </nav>
 
     <main class="mainContacto">
+
+        <h1 class="tituloPagina">Contacto</h1>
         
 
         <div class="formulario container-fluid">
@@ -91,50 +93,32 @@
             <div class="formContacto">
                 <form>
                     <div class="mb-3">
-                      <label for="nombre" class="form-label">Nombre</label>
+                      <label for="nombre" class="form-label">Nombre*</label>
                       <input type="nombre" class="form-control" id="nombre" >
                      
                     </div>
                     <div class="mb-3">
-                      <label for="email" class="form-label">Email</label>
+                      <label for="email" class="form-label">Email*</label>
                       <input type="email" class="form-control" id="email">
                     </div>
+                
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono*</label>
+                        <input type="telefono" class="form-control" id="telefono">  
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="areaTexto" class="form-label">Comente aquí*</label>
+                        <textarea class="form-control" id="areaTexto" rows="3"></textarea>
+                      </div>
                     <div class="mb-3 form-check">
                       <input type="checkbox" class="form-check-input" id="noSoyRobot">
                       <label class="form-check-label" for="noSoyRobot">No Soy Robot</label>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
                   </form>
 
-                <form>
-
-                    <div>
-                        <ul>
-                            <li><input type="text" id="nombre" placeholder="Nombre y Apellido*"></li>
-                        </ul>
-
-                        <ul>
-                            <li><input type="email" id="email" required placeholder="Email*"></li>
-                        </ul>
-
-                        <ul>
-                            <li><input type="number" id="telefono" placeholder="Teléfono*"></li>
-                        </ul>
-
-                        <ul>
-                            <li><textarea name="comentario" id="comentario" required placeholder="Comente*"></textarea>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!--boton enviar-->
-                    <div class="botonFormulario">
-                        <input type="submit" value="Enviar Mensaje" id="botonEnviar">
-                    </div>
-
-
-                </form>
-
+                
             </div>
 
         </div>
