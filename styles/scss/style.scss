@@ -480,39 +480,46 @@ main{
     margin-top: 60px;    
     display: flex;
     flex-direction: column;
-
-}
-
-.cardEquipos{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-    .card{
-        width: 30%;
-        height: auto;
-        margin: 30px 0 20px 0 ;
-        box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
-        -webkit-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
-        -moz-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
-        .cajaBotones{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
+    .cardEquipos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    
+        .card{
+            width: 30%;
+            height: auto;
+            margin: 30px 0 20px 0 ;
+            box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
+            -webkit-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
+            -moz-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
+            .cajaBotones{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                    
+            }
+    
+            button a{
+                color: #003576;
+                text-decoration: none;
                 
-        }
-
-        button a{
-            color: #003576;
-            text-decoration: none;
+            }
+                
+            
             
         }
-            
-        
+    }
+    .hr {
+        img{
+            width: 100%; 
+        }
         
     }
+
 }
+
+
 /*SECCION SEDES*/
 
 .sectionSedes{
@@ -817,6 +824,30 @@ footer{
         }
     }
 
+    /*MAIN SERIE DEL CARIBE*/
+
+    .gridSerie{
+        grid-template-rows: 18vh 8vh 0.2fr 1fr 25vh 25vh
+    }
+
+    .mainCaribe {
+        .tituloPagina {
+            
+            margin-top: 30px;
+            margin-bottom: 50px;
+            
+        }
+        #videoMain2{
+            height: 400px;
+            
+        }
+        .texto p{
+            font-size: medium;
+        }
+    }
+
+
+
     /*main contacto*/
 
     .formulario{
@@ -824,14 +855,14 @@ footer{
         
         display: flex;
         flex-direction: column;
-        
-    }    
+            
+    } 
 
-    /*section main*/
+    /*section index*/
 
     .subtituloTabla {
         font-size: x-large;
-
+    
         img {
             height: auto;
         }
@@ -839,7 +870,7 @@ footer{
 
 
 
-    /*equipos*/
+    /*section equipos*/
 
     .gridEquipos{
    
@@ -848,20 +879,47 @@ footer{
     }
    
 
-    .cardEquipos .card{
-        width: 40%;
-        
-        
-         
-        
+    .sectionEquipos{
+
+        .cardEquipos{
+
+            .card{
+                width: 40%;
+            }
+
+        }
     }
+
 
     /*section sedes*/
     
     .sectionSedes .card {
         width: 40%;
     }
- 
+
+    /*section serie del caribe*/
+
+    .sectionSerie{
+
+        .sectionRepresentantes{    
+        
+            flex-direction: column;
+
+            .equipoPais{
+    
+                width: 100%;
+                margin-bottom: 80px;
+                height: 300px;
+                
+
+                
+            }
+    
+        }
+        
+
+        
+    } 
 
 
  
@@ -964,6 +1022,30 @@ footer{
                
     }
 
+
+    /*MAIN CARIBE*/
+
+    .gridSerie{
+        grid-template-rows: 18vh 8vh 0.1fr 1fr 25vh 25vh;
+    }
+
+    .mainCaribe {
+        .tituloPagina {
+            
+            margin-top: 10px;
+            margin-bottom: 20px;
+            
+        }
+        #videoMain2{
+            height: 200px;
+            
+        }
+        .texto p{
+            font-size: x-small;
+        }
+    }
+
+
     /*section index*/
 
 
@@ -983,11 +1065,126 @@ footer{
     width: 100%;
    }
 
-    .novena{
+   /*section equipos*/
+
+    .gridEquipos{
+   
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "section"
+        "banner"
+        "footer";
+        grid-template-columns: 1fr ;
+        grid-template-rows: 12vh 8vh 1fr 18vh 25vh
+    }
+
+    .sectionEquipos {
+        padding: 0 10% 0 10%;
+        .cardEquipos {
+            .card{
+                width: 100%;
+                overflow: hidden;
+
+                .card-title {
+                    font-size: small;
+                }
+
+                .card-text {
+                    font-size: x-small;
+                }
+            
+                .list-group-item{
+                    font-size: xx-small;
+                }
+            }
+             
+            
+        }
+    }
+
+    
+
+  
+
+
+
+    /*section sedes*/
+
+    .gridSedes{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "section"
+        "banner"
+        "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 12vh 8vh 1fr 18vh 25vh;
+    }
+    .sectionSedes{
+    
+        padding: 0 5% 0 5%;
+        .tituloPagina{
+            margin: 20px 0 20px 0;
+        }
+        .texto p{
+            font-size: smaller;
+            margin-bottom: 50px;
+        }
+    }
+    
+    .sectionSedes .card {
         width: 100%;
+        height: auto;
+
+   
         
     }
 
+    /*SECTION SERIE DEL CARIBE*/
+
+   .sectionSerie{
+
+        .sectionRepresentantes{    
+        
+            flex-direction: column;
+
+            .equipoPais{
+    
+                width: 100%;
+                margin-bottom: 80px;
+                overflow: hidden;
+                height: 330px;
+                .card{
+                                        
+                    .col-md-4{
+                        align-content: center;
+                        img {
+                            display: none;
+                        }
+                    }
+                    .col-md-8{
+                        iframe{
+                            height: 200px;
+                        }
+                    }
+                    
+                }
+
+                
+            }
+    
+        }
+        
+
+        
+    } 
+    
+    
+  
+    /*BANNER*/
     .banner{
         flex-direction: row;
         flex-wrap: wrap;
@@ -997,8 +1194,8 @@ footer{
 
     .publicidad{
         
-        width: 35%;
-        height: 5%;
+        width: 18%;
+        height: 30%;
         padding-top: 0px;
     }
 
@@ -1035,107 +1232,9 @@ footer{
     
     
   
-    /*equipos*/
 
-    .gridEquipos{
-   
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "nav"
-        "section"
-        "banner"
-        "footer";
-        grid-template-columns: 1fr ;
-        grid-template-rows: 12vh 8vh 1fr 18vh 25vh
-    }
 
-    .sectionEquipos {
-        padding: 0 10% 0 10%;
-    }
 
-    .cardEquipos .card{
-        width: 80%;
-        overflow: hidden;
-         
-        
-    }
-
-    .card-title {
-        font-size: small;
-    }
-
-   .card-text {
-        font-size: x-small;
-    }
-
-    .list-group-item{
-        font-size: xx-small;
-    }
-
-    /*section sedes*/
-
-    .gridSedes{
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "nav"
-        "section"
-        "banner"
-        "footer";
-        grid-template-columns: 1fr;
-        grid-template-rows: 12vh 8vh 1fr 18vh 25vh;
-    }
-    .sectionSedes{
     
-        padding: 0 5% 0 5%;
-        .tituloPagina{
-            margin: 20px 0 20px 0;
-        }
-        .texto p{
-            font-size: smaller;
-            margin-bottom: 50px;
-        }
-    }
-    
-    .sectionSedes .card {
-        width: 100%;
-        height: auto;
-
-   
-        
-    }
-
-    /*banner sedes*/
-
-    .publicidad {
-        width: 18%;
-        height: 30%;
-       
-       
-       
-    }
-
-    .footer{
-        height: fit-content;
-        .logoLigaFooter{
-            margin-top: 10px;
-            margin-bottom: 10px;
-            height: auto;
-            flex-wrap: wrap;
-            align-self: center;
-            .imagenFooter{
-                width: 18%;                  
-            }            
-        }
-        .copyright{
-            height: 10%;
-            margin: 0;
-            padding-top: 2%;
-            .textoCopy{
-                margin: 0;
-            }
-        }
-    }
 
 }

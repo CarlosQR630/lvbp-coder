@@ -355,14 +355,13 @@ main {
   display: flex;
   flex-direction: column;
 }
-
-.cardEquipos {
+.sectionEquipos .cardEquipos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.cardEquipos .card {
+.sectionEquipos .cardEquipos .card {
   width: 30%;
   height: auto;
   margin: 30px 0 20px 0;
@@ -370,14 +369,17 @@ main {
   -webkit-box-shadow: 0px 4px 13px 1px rgba(0, 0, 0, 0.92);
   -moz-box-shadow: 0px 4px 13px 1px rgba(0, 0, 0, 0.92);
 }
-.cardEquipos .card .cajaBotones {
+.sectionEquipos .cardEquipos .card .cajaBotones {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.cardEquipos .card button a {
+.sectionEquipos .cardEquipos .card button a {
   color: #003576;
   text-decoration: none;
+}
+.sectionEquipos .hr img {
+  width: 100%;
 }
 
 /*SECCION SEDES*/
@@ -604,29 +606,52 @@ footer .copyright {
     margin-top: 10%;
     text-align: center;
   }
+  /*MAIN SERIE DEL CARIBE*/
+  .gridSerie {
+    grid-template-rows: 18vh 8vh 0.2fr 1fr 25vh 25vh;
+  }
+  .mainCaribe .tituloPagina {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .mainCaribe #videoMain2 {
+    height: 400px;
+  }
+  .mainCaribe .texto p {
+    font-size: medium;
+  }
   /*main contacto*/
   .formulario {
     display: flex;
     flex-direction: column;
   }
-  /*section main*/
+  /*section index*/
   .subtituloTabla {
     font-size: x-large;
   }
   .subtituloTabla img {
     height: auto;
   }
-  /*equipos*/
+  /*section equipos*/
   .gridEquipos {
     grid-template-columns: 10% 1fr 1fr 10%;
     grid-template-rows: 12vh 8vh 0.5fr 25vh 25vh;
   }
-  .cardEquipos .card {
+  .sectionEquipos .cardEquipos .card {
     width: 40%;
   }
   /*section sedes*/
   .sectionSedes .card {
     width: 40%;
+  }
+  /*section serie del caribe*/
+  .sectionSerie .sectionRepresentantes {
+    flex-direction: column;
+  }
+  .sectionSerie .sectionRepresentantes .equipoPais {
+    width: 100%;
+    margin-bottom: 80px;
+    height: 300px;
   }
 }
 /*RESOLUCION DE 768PX*/
@@ -686,6 +711,20 @@ footer .copyright {
     overflow: visible;
     padding: 0%;
   }
+  /*MAIN CARIBE*/
+  .gridSerie {
+    grid-template-rows: 18vh 8vh 0.1fr 1fr 25vh 25vh;
+  }
+  .mainCaribe .tituloPagina {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .mainCaribe #videoMain2 {
+    height: 200px;
+  }
+  .mainCaribe .texto p {
+    font-size: x-small;
+  }
   /*section index*/
   .sectionSuperior {
     flex-direction: column;
@@ -697,43 +736,7 @@ footer .copyright {
   #tablaPosicion {
     width: 100%;
   }
-  .novena {
-    width: 100%;
-  }
-  .banner {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .publicidad {
-    width: 35%;
-    height: 5%;
-    padding-top: 0px;
-  }
-  .banner img {
-    height: 100%;
-  }
-  .footer {
-    height: fit-content;
-  }
-  .footer .logoLigaFooter {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: auto;
-    flex-wrap: wrap;
-    align-self: center;
-  }
-  .footer .logoLigaFooter .imagenFooter {
-    width: 18%;
-  }
-  .footer .copyright {
-    height: 10%;
-    margin: 0;
-    padding-top: 2%;
-  }
-  .footer .copyright .textoCopy {
-    margin: 0;
-  }
-  /*equipos*/
+  /*section equipos*/
   .gridEquipos {
     display: grid;
     grid-template-areas: "header" "nav" "section" "banner" "footer";
@@ -743,17 +746,17 @@ footer .copyright {
   .sectionEquipos {
     padding: 0 10% 0 10%;
   }
-  .cardEquipos .card {
-    width: 80%;
+  .sectionEquipos .cardEquipos .card {
+    width: 100%;
     overflow: hidden;
   }
-  .card-title {
+  .sectionEquipos .cardEquipos .card .card-title {
     font-size: small;
   }
-  .card-text {
+  .sectionEquipos .cardEquipos .card .card-text {
     font-size: x-small;
   }
-  .list-group-item {
+  .sectionEquipos .cardEquipos .card .list-group-item {
     font-size: xx-small;
   }
   /*section sedes*/
@@ -777,10 +780,37 @@ footer .copyright {
     width: 100%;
     height: auto;
   }
-  /*banner sedes*/
+  /*SECTION SERIE DEL CARIBE*/
+  .sectionSerie .sectionRepresentantes {
+    flex-direction: column;
+  }
+  .sectionSerie .sectionRepresentantes .equipoPais {
+    width: 100%;
+    margin-bottom: 80px;
+    overflow: hidden;
+    height: 330px;
+  }
+  .sectionSerie .sectionRepresentantes .equipoPais .card .col-md-4 {
+    align-content: center;
+  }
+  .sectionSerie .sectionRepresentantes .equipoPais .card .col-md-4 img {
+    display: none;
+  }
+  .sectionSerie .sectionRepresentantes .equipoPais .card .col-md-8 iframe {
+    height: 200px;
+  }
+  /*BANNER*/
+  .banner {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   .publicidad {
     width: 18%;
     height: 30%;
+    padding-top: 0px;
+  }
+  .banner img {
+    height: 100%;
   }
   .footer {
     height: fit-content;
