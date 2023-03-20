@@ -35,12 +35,11 @@ body {
     grid-template-areas: 
     ". header header ."
     "nav nav nav nav"
-
     ". section section ."
     ". banner banner ."
     "footer footer footer footer";
     grid-template-columns: 10% 1fr 1fr 10%;
-    grid-template-rows: 18vh 8vh 0.5fr 40vh 25vh
+    grid-template-rows: 18vh 8vh 0.5fr 25vh 25vh
 }
 
 .gridSedes{
@@ -68,6 +67,20 @@ body {
     grid-template-rows: 18vh 8vh 0.5fr 1fr 25vh 25vh
 
 }
+
+.gridContacto{
+    display: grid;
+    grid-template-areas: 
+    ". header header ."
+    "nav nav nav nav"
+    ". main main ."
+    ". banner banner ."
+    "footer footer footer footer";
+    grid-template-columns: 10% 1fr 1fr 10%;
+    grid-template-rows: 18vh 8vh 1fr 25vh 25vh;
+}
+
+
 
 
 
@@ -389,23 +402,38 @@ main{
 
 /*MAIN CONTACTO*/
 
-.formulario{
-    background-color: rgb(38, 0, 255);
-    margin-top: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.logoFormulario{
-    background-color: chartreuse;
-}
-
-.formContacto{
-    background-color: blueviolet;
-    width: 35%;
+.mainContacto {
     
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    .tituloContacto{
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    .formulario{
+        
+        margin-top: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        
+
+        .formContacto{
+            
+            width: 35%;
+            
+        }
+    }
 }
+
+
+
+
+
+
 
 /*SECTION*/
 .sectionIndex{
@@ -451,7 +479,8 @@ main{
     grid-area: section;
     margin-top: 60px;    
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
+
 }
 
 .cardEquipos{
@@ -467,6 +496,20 @@ main{
         box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
         -webkit-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
         -moz-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
+        .cajaBotones{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+                
+        }
+
+        button a{
+            color: #003576;
+            text-decoration: none;
+            
+        }
+            
+        
         
     }
 }
@@ -681,57 +724,7 @@ footer{
     
 }
 
-/*RESOLUCION 1440PX*/
 
-@media screen and (max-width: 1440px) {
-
-
-    /*section main*/
-
-    .gridEquipos{
-        
-        grid-template-columns: 10% 1fr 1fr 10%;
-        grid-template-rows: 18vh 8vh 1fr 25vh 25vh
-        
-    }
-
-    .equiposLiga1{
-    
-        
-        overflow: hidden;
-        height: fit-content;
-    
-    
-    }
-
-
-
-    .novena{
-        width: 44%;
-        height: fit-content;
-        margin-bottom: 10%;
-    }
-
-    .multimedia{
-        width: 100%;
-        
-    }
-
-    
-    
-    
-    button a{
-        color: #003576;
-        text-decoration: none;
-        
-    }
-
-
-
-    
-
-
-}
 
 /*RESOLUCION DE 1024PX*/
 
@@ -739,8 +732,6 @@ footer{
 
     .bodyGrid{
         height: fit-content;
-   
-
         grid-template-columns: 10% 1fr 1fr 10%;
         grid-template-rows: 12vh 8vh 1fr 0.5fr 30vh 25vh
     } 
@@ -773,71 +764,78 @@ footer{
 
 
 
-    .main2{        
-        
+    .main2{      
+        flex-direction: row;
         flex-wrap: wrap;    
-    }
-
-    .mainIzq{
+        
+        .mainIzq{
    
-        width: 100%;
-        padding-right: 0;
-        height: fit-content;
+            width: 100%;
+            padding-right: 0;
+            height: fit-content;
+            
+        }
+
+        .mainDer{   
         
+            margin-top: 20px;
+        
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            
+            .multimedia{
+                height: 400px;
+            }
+
+            .mainTitulares{
+
+                .titulares{          
+                    overflow: hidden;
+
+                    
+                }
+                .listaTitular li{
+                    width: auto;
+                                        
+                    white-space: normal;
+                    list-style-position: inside;
+                    list-style-type: disc;
+                    overflow: hidden;
+                    padding-bottom: 1%;   
+                           
+                }
+            }
+            
+            .mainTitulares h2{
+                margin-top: 10%;
+                text-align: center;
+                
+            }
+            
+        }
     }
 
-    .mainDer{   
+    /*main contacto*/
+
+    .formulario{
         
-        margin-top: 20px;
-    
-        width: 100%;
-        height: fit-content;
+        
         display: flex;
         flex-direction: column;
         
-        
-    }
-
-    .multimedia{
-        height: 400px;
-    }
-
-    .mainTitulares h2{
-        margin-top: 10%;
-        text-align: center;
-        
-    }
-
-    .titulares{  
-         
-        
-        overflow: hidden;
-    }
-    
-      .listaTitular li{
-        width: auto;
-        
-        
-        white-space: normal;
-        list-style-position: inside;
-        list-style-type: disc;
-        overflow: hidden;
-        padding-bottom: 1%;   
-               
-    }
+    }    
 
     /*section main*/
 
     .subtituloTabla {
         font-size: x-large;
-    }
 
-    .sectionTabla img {
-        height: auto;
+        img {
+            height: auto;
+        }
     }
-    
-
-   
 
 
 
@@ -845,22 +843,14 @@ footer{
 
     .gridEquipos{
    
-        display: grid;
-        grid-template-areas: 
-        ". header header ."
-        "nav nav nav nav"
-    
-        ". section section ."
-        ". banner banner ."
-        "footer footer footer footer";
         grid-template-columns: 10% 1fr 1fr 10%;
         grid-template-rows: 12vh 8vh 0.5fr 25vh 25vh
     }
-
    
 
     .cardEquipos .card{
         width: 40%;
+        
         
          
         
@@ -882,8 +872,7 @@ footer{
 /*RESOLUCION DE 768PX*/
 
 @media screen and (max-width: 768px) {
-    .bodyGrid{
-        
+    .bodyGrid{        
         grid-template-areas: 
         "header"
         "nav"
@@ -891,9 +880,8 @@ footer{
         "section"
         "banner"
         "footer"; 
-
         grid-template-columns:100%;
-        grid-template-rows: 12vh 8vh 0.75fr 1fr 40vh 15vh
+        grid-template-rows: 12vh 8vh 0.75fr 1fr 17vh 15vh
     }  
 
     .header{
@@ -945,7 +933,7 @@ footer{
     }
 
     .multimedia{
-        height: 300px;
+        height: 150px;
         
     }
 
@@ -957,7 +945,10 @@ footer{
     .listaTitular{
         
        
-       height: fit-content
+       height: fit-content;
+       padding: 0;
+
+
     
     }
     
@@ -1005,9 +996,9 @@ footer{
     }
 
     .publicidad{
-        background-color: aqua;
+        
         width: 35%;
-        height: 30%;
+        height: 5%;
         padding-top: 0px;
     }
 
@@ -1019,25 +1010,31 @@ footer{
 
     .footer{
         height: fit-content;
+        .logoLigaFooter{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: auto;
+            flex-wrap: wrap;
+            align-self: center;
+            .imagenFooter{
+                width: 18%;                  
+            }            
+        }
+        .copyright{
+            height: 10%;
+            margin: 0;
+            padding-top: 2%;
+            .textoCopy{
+                margin: 0;
+            }
+        }
     }
 
-    .logoLigaFooter{
-        margin-top: 0px;
-        flex-wrap: wrap;
-        align-self: center;
-        
-    }
 
-    .imagenFooter{
-        width: 40%;  
-        
-    }
+
     
-    .imagenFooter a img{
-        width: 60%;
-        margin-left: 50px;
-    }
-
+    
+  
     /*equipos*/
 
     .gridEquipos{
@@ -1050,15 +1047,16 @@ footer{
         "banner"
         "footer";
         grid-template-columns: 1fr ;
-        grid-template-rows: 12vh 8vh 0.5fr 40vh 25vh
+        grid-template-rows: 12vh 8vh 1fr 18vh 25vh
     }
 
     .sectionEquipos {
-        padding: 0 20% 0 20%;
+        padding: 0 10% 0 10%;
     }
 
     .cardEquipos .card{
-        width: 100%;
+        width: 80%;
+        overflow: hidden;
          
         
     }
@@ -1086,15 +1084,23 @@ footer{
         "banner"
         "footer";
         grid-template-columns: 1fr;
-        grid-template-rows: 12vh 8vh 1fr 25vh 25vh;
+        grid-template-rows: 12vh 8vh 1fr 18vh 25vh;
     }
     .sectionSedes{
     
-        padding: 0 20% 0 20%;
+        padding: 0 5% 0 5%;
+        .tituloPagina{
+            margin: 20px 0 20px 0;
+        }
+        .texto p{
+            font-size: smaller;
+            margin-bottom: 50px;
+        }
     }
     
     .sectionSedes .card {
         width: 100%;
+        height: auto;
 
    
         
@@ -1108,6 +1114,28 @@ footer{
        
        
        
+    }
+
+    .footer{
+        height: fit-content;
+        .logoLigaFooter{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: auto;
+            flex-wrap: wrap;
+            align-self: center;
+            .imagenFooter{
+                width: 18%;                  
+            }            
+        }
+        .copyright{
+            height: 10%;
+            margin: 0;
+            padding-top: 2%;
+            .textoCopy{
+                margin: 0;
+            }
+        }
     }
 
 }
