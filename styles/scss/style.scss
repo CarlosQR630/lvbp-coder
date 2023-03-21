@@ -26,7 +26,7 @@ body {
     ". banner banner ."
     "footer footer footer footer";
     grid-template-columns: 10% 1fr 1fr 10%;
-    grid-template-rows: 18vh 8vh 1fr 1fr 0.10fr 0.3fr
+    grid-template-rows: 18vh 10vh 1fr 1fr 0.10fr 0.3fr
 }
 
 .gridEquipos{
@@ -39,7 +39,7 @@ body {
     ". banner banner ."
     "footer footer footer footer";
     grid-template-columns: 10% 1fr 1fr 10%;
-    grid-template-rows: 18vh 8vh 0.5fr 25vh 25vh
+    grid-template-rows: 18vh 10vh 0.5fr 25vh 25vh
 }
 
 .gridSedes{
@@ -51,7 +51,7 @@ body {
     ". banner banner ."
     "footer footer footer footer";
     grid-template-columns: 10% 1fr 1fr 10%;
-    grid-template-rows: 18vh 8vh 1fr 25vh 25vh
+    grid-template-rows: 18vh 10vh 1fr 25vh 25vh
 }
 
 .gridSerie{
@@ -64,7 +64,7 @@ body {
     ". banner banner ."
     "footer footer footer footer";
     grid-template-columns: 10% 1fr 1fr 10%;
-    grid-template-rows: 18vh 8vh 0.5fr 1fr 25vh 25vh
+    grid-template-rows: 18vh 10vh 0.5fr 1fr 25vh 25vh
 
 }
 
@@ -77,7 +77,7 @@ body {
     ". banner banner ."
     "footer footer footer footer";
     grid-template-columns: 10% 1fr 1fr 10%;
-    grid-template-rows: 18vh 8vh 1fr 25vh 25vh;
+    grid-template-rows: 18vh 10vh 1fr 25vh 25vh;
 }
 
 
@@ -609,7 +609,7 @@ main{
     
             width: 40%;
             margin-bottom: 120px;
-            height: 40vh;
+            height: 260PX;
             box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
             -webkit-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
             -moz-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
@@ -740,7 +740,7 @@ footer{
     .bodyGrid{
         height: fit-content;
         grid-template-columns: 10% 1fr 1fr 10%;
-        grid-template-rows: 12vh 8vh 1fr 0.5fr 30vh 25vh
+        grid-template-rows: 12vh 10vh 1fr 0.5fr 30vh 25vh
     } 
     
 
@@ -827,7 +827,7 @@ footer{
     /*MAIN SERIE DEL CARIBE*/
 
     .gridSerie{
-        grid-template-rows: 18vh 8vh 0.2fr 1fr 25vh 25vh
+        grid-template-rows: 18vh 10vh 0.2fr 1fr 18vh 25vh
     }
 
     .mainCaribe {
@@ -850,14 +850,18 @@ footer{
 
     /*main contacto*/
 
-    .formulario{
-        
-        
-        display: flex;
-        flex-direction: column;
+ .mainContacto {
+        .formulario {
+            margin-top: 80px;
             
-    } 
 
+            .formContacto{
+                width: 100%;
+                padding: 0 2% 0 2%;
+            }
+        }
+
+    }
     /*section index*/
 
     .subtituloTabla {
@@ -875,7 +879,7 @@ footer{
     .gridEquipos{
    
         grid-template-columns: 10% 1fr 1fr 10%;
-        grid-template-rows: 12vh 8vh 0.5fr 25vh 25vh
+        grid-template-rows: 12vh 10vh 0.5fr 25vh 25vh
     }
    
 
@@ -892,10 +896,26 @@ footer{
 
 
     /*section sedes*/
-    
-    .sectionSedes .card {
-        width: 40%;
+
+    .gridSedes{
+
+       grid-template-rows: 18vh 10vh 85% 18vh 25vh
     }
+    
+    .sectionSedes{
+
+        .textoSedes p{
+            font-size: larger;
+            
+            
+        }
+
+        .card {
+            width: 40%;
+            height: auto;
+        }
+    } 
+   
 
     /*section serie del caribe*/
 
@@ -939,7 +959,7 @@ footer{
         "banner"
         "footer"; 
         grid-template-columns:100%;
-        grid-template-rows: 12vh 8vh 0.75fr 1fr 17vh 15vh
+        grid-template-rows: 12vh 10vh 0.75fr 1fr 17vh 15vh
     }  
 
     .header{
@@ -1022,14 +1042,50 @@ footer{
                
     }
 
+    .gridEquipos{
+   
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "section"
+        "banner"
+        "footer";
+        grid-template-columns: 1fr ;
+        grid-template-rows: 12vh 10vh 1fr 18vh 25vh
+    }
+
+    .gridContacto{
+        grid-template-areas: 
+        "header"
+        "nav "
+        "main"
+        "banner"
+        "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 12vh 10vh 70% 15vh 25vh;
+        
+
+    }
+
+
 
     /*MAIN CARIBE*/
 
     .gridSerie{
-        grid-template-rows: 18vh 8vh 0.1fr 1fr 25vh 25vh;
+        grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "section"
+        "banner"
+        "footer";
+        grid-template-columns: 1fr; 
+        grid-template-rows: 12vh 10vh 13% 77% 15vh 25vh;
     }
 
     .mainCaribe {
+        padding: 0 10% 0 10%;
         .tituloPagina {
             
             margin-top: 10px;
@@ -1043,6 +1099,23 @@ footer{
         .texto p{
             font-size: x-small;
         }
+    }
+
+    /*MAIN CONTACTO*/
+
+    .mainContacto {
+        .formulario {
+            margin-top: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .formContacto{
+                width: 100%;
+                padding: 0 10% 0 10%;
+            }
+        }
+
     }
 
 
@@ -1067,18 +1140,6 @@ footer{
 
    /*section equipos*/
 
-    .gridEquipos{
-   
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "nav"
-        "section"
-        "banner"
-        "footer";
-        grid-template-columns: 1fr ;
-        grid-template-rows: 12vh 8vh 1fr 18vh 25vh
-    }
 
     .sectionEquipos {
         padding: 0 10% 0 10%;
@@ -1121,7 +1182,7 @@ footer{
         "banner"
         "footer";
         grid-template-columns: 1fr;
-        grid-template-rows: 12vh 8vh 1fr 18vh 25vh;
+        grid-template-rows: 12vh 10vh 95% 15vh 28vh;
     }
     .sectionSedes{
     
@@ -1146,6 +1207,7 @@ footer{
     /*SECTION SERIE DEL CARIBE*/
 
    .sectionSerie{
+        padding: 0 10% 0 10%;
 
         .sectionRepresentantes{    
         
@@ -1158,6 +1220,7 @@ footer{
                 overflow: hidden;
                 height: 330px;
                 .card{
+                    overflow: hidden;
                                         
                     .col-md-4{
                         align-content: center;
