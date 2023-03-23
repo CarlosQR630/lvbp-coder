@@ -879,16 +879,21 @@ footer{
     .gridEquipos{
    
         grid-template-columns: 10% 1fr 1fr 10%;
-        grid-template-rows: 12vh 10vh 0.5fr 25vh 25vh
+        grid-template-rows: 12vh 10vh 0.5fr 18vh 25vh
     }
    
 
     .sectionEquipos{
+        .tituloPaginaEquipos{
+            text-align: center;
+            margin-bottom: 30px;
+        }
 
         .cardEquipos{
 
             .card{
-                width: 40%;
+                width: 100%;
+                margin-bottom: 100px;
             }
 
         }
@@ -1143,6 +1148,10 @@ footer{
 
     .sectionEquipos {
         padding: 0 10% 0 10%;
+        .tituloPaginaEquipos{
+            text-align: center;
+            margin-bottom: 30px;
+        }
         .cardEquipos {
             .card{
                 width: 100%;

@@ -638,10 +638,15 @@ footer .copyright {
   /*section equipos*/
   .gridEquipos {
     grid-template-columns: 10% 1fr 1fr 10%;
-    grid-template-rows: 12vh 10vh 0.5fr 25vh 25vh;
+    grid-template-rows: 12vh 10vh 0.5fr 18vh 25vh;
+  }
+  .sectionEquipos .tituloPaginaEquipos {
+    text-align: center;
+    margin-bottom: 30px;
   }
   .sectionEquipos .cardEquipos .card {
-    width: 40%;
+    width: 100%;
+    margin-bottom: 100px;
   }
   /*section sedes*/
   .gridSedes {
@@ -776,6 +781,10 @@ footer .copyright {
   /*section equipos*/
   .sectionEquipos {
     padding: 0 10% 0 10%;
+  }
+  .sectionEquipos .tituloPaginaEquipos {
+    text-align: center;
+    margin-bottom: 30px;
   }
   .sectionEquipos .cardEquipos .card {
     width: 100%;
