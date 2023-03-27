@@ -347,20 +347,42 @@ main{
                 list-style-position: inside;
                 list-style-type: disc;
                 overflow: hidden;
-                padding-bottom: 0%;         
+                padding-bottom: 0%;
+                       
                        
             }
             
             .a1{
                 color: #00244f;
+                a {
+                    &:hover{
+                        color: #003576;
+                        font-size: large;
+                    } 
+
+                }
             }
 
             .b1{
                 color: rgb(51,122,183);
+                a {
+                    &:hover{
+                        color: #003576;
+                        font-size: large;
+                    } 
+
+                }
             }
 
             .c1{
                 color: #c7c7c7;
+                a {
+                    &:hover{
+                        color: #003576;
+                        font-size: large;
+                    } 
+
+                }
             }
 
             li a{
@@ -384,8 +406,9 @@ main{
     flex-direction: column;
     .tituloPagina {
         text-align: center;
-        margin-top: 80px;
+        margin-top: 60px;
         margin-bottom: 80px;
+        color: #00244f;
         
     }
     #videoMain2{
@@ -409,7 +432,8 @@ main{
     margin-bottom: 50px;
     .tituloContacto{
         text-align: center;
-        margin-top: 80px;
+        margin-top: 60px;
+        color: #00244f;
     }
 
     .formulario{
@@ -480,16 +504,31 @@ main{
     margin-top: 60px;    
     display: flex;
     flex-direction: column;
+    .tituloPaginaEquipos{
+        text-align: center;
+        margin-bottom: 80px;
+        margin-top: 20px;
+        color: #00244f;
+    }
+
+    .textoEquipos{
+        font-size: larger;
+    }
+
+
+
     .cardEquipos{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+        margin-top: 80px;
+        margin-bottom: 60px;
     
         .card{
             width: 30%;
             height: auto;
-            margin: 30px 0 20px 0 ;
+            margin: 30px 0 80px 0 ;
             box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
             -webkit-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
             -moz-box-shadow: 0px 4px 13px 1px rgba(0,0,0,0.92);
@@ -534,6 +573,7 @@ main{
         text-align: center;
         margin-top: 80px;
         margin-bottom: 80px;
+        color: #00244f;
         
     }
     .texto p{
@@ -624,7 +664,18 @@ main{
                 display: flex;
                 justify-content: space-around;
                 margin-bottom: 0%;
+                a img {
+                    &:hover {
+                        height: 105%;
+                        width: 125%;
+                    }
                     
+                }
+                &:hover{
+                    height: 15%;
+                }
+                   
+                
             }
 
             .banderaPais a img{

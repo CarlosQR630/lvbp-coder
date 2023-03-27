@@ -262,11 +262,23 @@ main {
 .mainDer .mainTitulares .titulares .a1 {
   color: #00244f;
 }
+.mainDer .mainTitulares .titulares .a1 a:hover {
+  color: #003576;
+  font-size: large;
+}
 .mainDer .mainTitulares .titulares .b1 {
   color: rgb(51, 122, 183);
 }
+.mainDer .mainTitulares .titulares .b1 a:hover {
+  color: #003576;
+  font-size: large;
+}
 .mainDer .mainTitulares .titulares .c1 {
   color: #c7c7c7;
+}
+.mainDer .mainTitulares .titulares .c1 a:hover {
+  color: #003576;
+  font-size: large;
 }
 .mainDer .mainTitulares .titulares li a {
   color: black;
@@ -280,8 +292,9 @@ main {
 }
 .mainCaribe .tituloPagina {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 60px;
   margin-bottom: 80px;
+  color: #00244f;
 }
 .mainCaribe #videoMain2 {
   height: 600px;
@@ -301,7 +314,8 @@ main {
 }
 .mainContacto .tituloContacto {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 60px;
+  color: #00244f;
 }
 .mainContacto .formulario {
   margin-top: 80px;
@@ -355,16 +369,27 @@ main {
   display: flex;
   flex-direction: column;
 }
+.sectionEquipos .tituloPaginaEquipos {
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 20px;
+  color: #00244f;
+}
+.sectionEquipos .textoEquipos {
+  font-size: larger;
+}
 .sectionEquipos .cardEquipos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-top: 80px;
+  margin-bottom: 60px;
 }
 .sectionEquipos .cardEquipos .card {
   width: 30%;
   height: auto;
-  margin: 30px 0 20px 0;
+  margin: 30px 0 80px 0;
   box-shadow: 0px 4px 13px 1px rgba(0, 0, 0, 0.92);
   -webkit-box-shadow: 0px 4px 13px 1px rgba(0, 0, 0, 0.92);
   -moz-box-shadow: 0px 4px 13px 1px rgba(0, 0, 0, 0.92);
@@ -395,6 +420,7 @@ main {
   text-align: center;
   margin-top: 80px;
   margin-bottom: 80px;
+  color: #00244f;
 }
 .sectionSedes .texto p {
   font-size: x-large;
@@ -471,6 +497,13 @@ main {
   display: flex;
   justify-content: space-around;
   margin-bottom: 0%;
+}
+.sectionSerie .sectionRepresentantes .equipoPais .banderaPais a img:hover {
+  height: 105%;
+  width: 125%;
+}
+.sectionSerie .sectionRepresentantes .equipoPais .banderaPais:hover {
+  height: 15%;
 }
 .sectionSerie .sectionRepresentantes .equipoPais .banderaPais a img {
   width: 100%;
