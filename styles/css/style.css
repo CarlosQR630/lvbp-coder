@@ -780,7 +780,7 @@ footer .copyright {
     padding: 0 10% 0 10%;
   }
   .mainCaribe .tituloPagina {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 20px;
   }
   .mainCaribe #videoMain2 {
@@ -790,6 +790,12 @@ footer .copyright {
     font-size: x-small;
   }
   /*MAIN CONTACTO*/
+  .mainContacto {
+    padding-top: 0px;
+  }
+  .mainContacto .tituloContacto {
+    margin: 20px 0 20px 0;
+  }
   .mainContacto .formulario {
     margin-top: 80px;
     display: flex;
@@ -813,11 +819,15 @@ footer .copyright {
   }
   /*section equipos*/
   .sectionEquipos {
+    margin: 0;
     padding: 0 10% 0 10%;
   }
   .sectionEquipos .tituloPaginaEquipos {
     text-align: center;
-    margin-bottom: 30px;
+    margin: 20px 0 20px 0;
+  }
+  .sectionEquipos .textoEquipos p {
+    font-size: x-small;
   }
   .sectionEquipos .cardEquipos .card {
     width: 100%;
@@ -840,14 +850,14 @@ footer .copyright {
     grid-template-rows: 12vh 10vh 95% 15vh 28vh;
   }
   .sectionSedes {
-    padding: 0 5% 0 5%;
+    padding: 0 10% 0 10%;
   }
   .sectionSedes .tituloPagina {
     margin: 20px 0 20px 0;
   }
-  .sectionSedes .texto p {
-    font-size: smaller;
-    margin-bottom: 50px;
+  .sectionSedes .textoSedes p {
+    font-size: x-small;
+    margin-bottom: 30px;
   }
   .sectionSedes .card {
     width: 100%;

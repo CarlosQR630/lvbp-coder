@@ -55,6 +55,7 @@ body {
 }
 
 .gridSerie{
+    
     display: grid;
     grid-template-areas: 
     ". header header ."
@@ -65,6 +66,7 @@ body {
     "footer footer footer footer";
     grid-template-columns: 10% 1fr 1fr 10%;
     grid-template-rows: 18vh 10vh 0.5fr 1fr 25vh 25vh
+    
 
 }
 
@@ -1144,7 +1146,7 @@ footer{
         padding: 0 10% 0 10%;
         .tituloPagina {
             
-            margin-top: 10px;
+            margin-top: 20px;
             margin-bottom: 20px;
             
         }
@@ -1160,6 +1162,10 @@ footer{
     /*MAIN CONTACTO*/
 
     .mainContacto {
+        padding-top: 0px;
+        .tituloContacto{
+            margin: 20px 0 20px 0;
+        }
         .formulario {
             margin-top: 80px;
             display: flex;
@@ -1198,10 +1204,15 @@ footer{
 
 
     .sectionEquipos {
+        margin: 0;
         padding: 0 10% 0 10%;
         .tituloPaginaEquipos{
             text-align: center;
-            margin-bottom: 30px;
+            margin: 20px 0 20px 0;
+        }
+
+        .textoEquipos p{
+            font-size: x-small;
         }
         .cardEquipos {
             .card{
@@ -1246,13 +1257,13 @@ footer{
     }
     .sectionSedes{
     
-        padding: 0 5% 0 5%;
+        padding: 0 10% 0 10%;
         .tituloPagina{
             margin: 20px 0 20px 0;
         }
-        .texto p{
-            font-size: smaller;
-            margin-bottom: 50px;
+        .textoSedes p{
+            font-size: x-small;
+            margin-bottom: 30px;
         }
     }
     
